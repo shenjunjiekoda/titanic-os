@@ -84,7 +84,7 @@ next:
   JB    readloop          ; 读取指定数量的柱面，未达到CYLS则跳转readloop
 
 ; 读取完毕，跳转到haribote.sys执行
-  MOV   [0x0ff0], CH      ; 记下IPL读了多远（谷歌翻译自IPLがどこまで読んだのかをメモ）
+  MOV   [0x0ff0], CH      ; 记下IPL读了多远
   JMP   0xc200
 
 fin:

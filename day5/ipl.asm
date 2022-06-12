@@ -1,6 +1,6 @@
-; titanic-os
+; hello-os
 
-CYLS   EQU   10               ; 读取的柱面数量（CYLS = cylinders）equ相当于#define
+CYLS   EQU   10               ; 读取的柱面数量（CYLS = cylinders）
 
   ORG   0x7c00            ; 指明程序的装载地址
 
@@ -83,7 +83,7 @@ next:
   CMP   CH, CYLS
   JB    readloop          ; 读取指定数量的柱面，未达到CYLS则跳转readloop
 
-; 读取完毕，跳转到haribote.sys执行
+; 读取完毕，跳转到titanic.sys执行
   MOV   [0x0ff0], CH      ; 记下IPL读了多远
   JMP   0xc200
 
