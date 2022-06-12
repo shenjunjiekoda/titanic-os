@@ -25,3 +25,8 @@ cd day1
 make qemu
 ```
 
+#### 运行效果图(day5)
+
+## 完成效果  
+
+![Screen](./pic/day5.png)

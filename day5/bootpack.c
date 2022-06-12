@@ -40,9 +40,9 @@ struct BootInfo { // 12 Bytes
 };
 
 struct SegmentDescriptor {
-  short limit_low, base_low; // 段数量限制低位， 基址低位
+  short limit_low, base_low; // 段大小限制低位， 基址低位
   char base_mid, access_right; // 基址中位，访问权限
-  char limit_high, base_high; // 段数量限制高位，基址高位
+  char limit_high, base_high; // 段大小限制高位，基址高位
 };
 
 struct GateDescriptor {
